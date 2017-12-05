@@ -15,7 +15,7 @@ trait RadialSpeedGauge extends GaugePainter {
 
   override def paint(g: Graphics2D, w: Int, h: Int) = {
     super.paint(g, w, h)
-
+/*
     val box = math.min(w, h)
     val strokeWidth = box / 5
     var dia = box - strokeWidth * 1.5
@@ -115,6 +115,6 @@ trait RadialSpeedGauge extends GaugePainter {
     g.drawLine(cx + 1, cy + 1, px + 1, py + 1)
     g.setColor(Color.yellow)
     g.drawLine(cx, cy, px, py)
-
+*/
   }
 }

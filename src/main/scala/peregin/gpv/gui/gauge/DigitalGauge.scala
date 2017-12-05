@@ -10,7 +10,7 @@ trait DigitalGauge extends GaugePainter with DigitalFont {
 
   override def paint(g: Graphics2D, w: Int, h: Int) = {
     super.paint(g, w, h)
-
+/*
     val cy = h / 2
     val box = math.min(w, h)
     val fs = box / 2
@@ -25,5 +25,6 @@ trait DigitalGauge extends GaugePainter with DigitalFont {
     val utext = unitText()
     val utb = g.getFontMetrics.getStringBounds(utext, g)
     textWidthShadow(g, utext, (w - utb.getWidth) / 2, cy + box / 2 + utb.getHeight * 2 - tb.getHeight * 1.2)
+*/
   }
 }

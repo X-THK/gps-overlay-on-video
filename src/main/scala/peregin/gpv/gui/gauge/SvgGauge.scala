@@ -35,6 +35,7 @@ trait SvgGauge extends GaugePainter {
   override def paint(g: Graphics2D, w: Int, h: Int) = {
     super.paint(g, w, h)
 
+/*
     val box = math.min(w, h)
     val cy = h / 2
     val d = box / 5
@@ -68,6 +69,7 @@ trait SvgGauge extends GaugePainter {
     g.setFont(gaugeFont.deriveFont(Font.BOLD, (box / 12).toFloat))
     val utb = g.getFontMetrics.getStringBounds(unitText, g)
     textWidthShadow(g, unitText, px + (w - utb.getWidth) / 2, cy + utb.getHeight * 2.2)
+*/
   }
 
 }

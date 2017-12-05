@@ -14,7 +14,7 @@ trait CadenceGauge extends GaugePainter {
 
   override def paint(g: Graphics2D, w: Int, h: Int) {
     super.paint(g, w, h)
-
+/*
     val box = math.min(w, h)
     val strokeWidth = box / 5
     var dia = box - strokeWidth * 1.5
@@ -94,5 +94,6 @@ trait CadenceGauge extends GaugePainter {
     val utext = "rpm"
     val utb = g.getFontMetrics.getStringBounds(utext, g)
     textWidthShadow(g, utext, (w - utb.getWidth) / 2, cy + box / 2 - utb.getHeight * 2.5)
+*/
   }
 }
