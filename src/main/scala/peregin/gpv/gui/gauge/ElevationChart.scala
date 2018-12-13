@@ -154,7 +154,7 @@ trait ElevationChart extends ChartPainter with KnobPainter {
         textWidthShadow(g, elevationText, gridLeft + (pxWidth - atb.getWidth) / 2, middleHeight)
         // slope grade
         val slope = sonda.grade.current
-        val slopeText = f"$slope%2.0f %%"
+        val slopeText = f"$slope%2.1f %%"
         val stb = g.getFontMetrics.getStringBounds(slopeText, g)
         textWidthShadow(g, slopeText, gridLeft + (pxWidth - stb.getWidth) / 2, middleHeight + stb.getHeight)
         // total distance
